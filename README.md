@@ -38,4 +38,4 @@ The **timing function** is based on the **LM555 timer IC**, a well-known compone
 - A **stable 12V power supply** is required for proper operation.  
 
 ## Project Photos  
-Below are images showcasing different aspects of the project.  
+Above are images showcasing different aspects of the project.  
