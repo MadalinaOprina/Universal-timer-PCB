@@ -39,7 +39,3 @@ The **timing function** is based on the **LM555 timer IC**, a well-known compone
 
 ## Project Photos  
 Below are images showcasing different aspects of the project.  
-
----
-
-This version makes the README more structured and visually appealing. Let me know if you’d like any tweaks! 🚀
