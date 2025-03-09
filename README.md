@@ -1,7 +1,45 @@
-# Universal-timer-PCB
-The purpose of the presented project is to design the PCB layout for a universal timer, according to a given circuit diagram and specific parameters. The universal timer consists of a relay used for switching the coil on and off in the circuit, and a potentiometer that adjusts the operating time of the timer. The circuit diagram is shown below.
-A brief description of the circuit will be presented, along with the equivalent circuit diagram in OrCAD Capture and the PCB project layers. The project created in OrCAD is located in the "PCB Project" folder. The datasheets are in the "Catalog sheets" folder, and the files for PCB manufacturing are in the "Fabrication files" folder. There is also "Footprint" folder which contains the footprints for the buttons and the relay, footprints that are not included in the list provided by the OrCAD application. 
-Here is the description of the project which can be also found in the "Documentation" folder:
-Due to its electromagnetic relay, this miniature circuit can be used in various applications. A few simple modifications allow us to adjust the duration and maximum operating interval. The actual timing function is achieved using a classic component in the field, the LM555. The Start (pin 2) and Stop (pin 4) inputs of the IC are normally held at a high voltage by resistors R4 and R6. In the idle state, the timing capacitor C2 is short-circuited to ground by the chip’s internal electronics. As soon as the start button is pressed, the output (pin 3) switches to 1, causing transistor T1 to activate the relay. To indicate operation, LED LD1 lights up immediately. Capacitor C2 then begins charging through R1 and RV1. The greater the capacitance of C2 and the resistance of RV1, the longer it will take for the capacitor voltage to reach the necessary threshold at the R2-R3 node, causing the output to return to zero and the capacitor to discharge.
-If the Stop button is pressed in the meantime, the output is immediately deactivated, and the capacitor discharges. The maximum timing period can be adjusted by changing the electrolytic capacitor C2. Doubling its capacitance effectively doubles the period. Another option is to double the value of the potentiometer RV1, but in this case, the capacitor’s current may distort the scale, reducing accuracy for longer timing intervals. The selected relay can switch up to 2 A at 230V. A stabilized 12V power supply is required for the circuit to function properly.
-Photos are displayed below to show parts of the project
+# Universal Timer PCB Project  
+
+## Overview  
+This project involves designing a PCB layout for a **universal timer** based on a given circuit diagram and specific parameters. The timer consists of:  
+- A **relay** for switching the coil on and off in the circuit.  
+- A **potentiometer** to adjust the timer's operating duration.  
+
+The **circuit diagram** is provided below.  
+
+## Project Structure  
+The following files and folders contain essential project components:  
+- **PCB Project** – The OrCAD project files.  
+- **Catalog Sheets** – Datasheets for the components used.  
+- **Fabrication Files** – Files required for PCB manufacturing.  
+- **Footprints** – Custom footprints for the buttons and relay (not included in OrCAD's default library).  
+- **Documentation** – A detailed description of the project and its functionality.  
+
+## Circuit Description  
+This miniature circuit, equipped with an **electromagnetic relay**, can be used in various applications. A few simple modifications allow adjustments to both **duration** and **maximum operating interval**.  
+
+The **timing function** is based on the **LM555 timer IC**, a well-known component in the field. Here’s how it works:  
+- The **Start (pin 2)** and **Stop (pin 4)** inputs are normally held at a **high voltage** by resistors R4 and R6.  
+- In the idle state, the **timing capacitor (C2)** is short-circuited to ground by the chip’s internal electronics.  
+- When the **Start button** is pressed:  
+  - The **output (pin 3)** switches **ON**, activating transistor **T1**, which in turn energizes the relay.  
+  - LED **LD1** lights up to indicate activation.  
+  - **Capacitor C2** starts charging through **R1** and **RV1**.  
+
+### Adjusting the Timer  
+- The **larger the capacitance of C2** and the **resistance of RV1**, the **longer the delay** before the output resets.  
+- If the **Stop button** is pressed before the delay ends, the circuit **immediately deactivates**, and **C2 discharges**.  
+- To **increase the maximum delay**, you can:  
+  - **Increase capacitor C2** (doubling its value doubles the timing period).  
+  - **Increase potentiometer RV1**, though this may distort the scale for long delays.  
+
+### Power & Relay Specifications  
+- The **relay can switch up to 2A at 230V**.  
+- A **stable 12V power supply** is required for proper operation.  
+
+## Project Photos  
+Below are images showcasing different aspects of the project.  
+
+---
+
+This version makes the README more structured and visually appealing. Let me know if you’d like any tweaks! 🚀
