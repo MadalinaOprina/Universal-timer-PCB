@@ -8,7 +8,7 @@ This project involves designing a PCB layout for a **universal timer** based on 
 The **circuit diagram** is provided below.  
 
 ## Project Structure  
-The following files and folders contain essential project components(all of these can be found in "TIE Project.rar"):  
+The following files and folders contain essential project components (all of these can be found in "TIE Project.rar"):  
 - **PCB Project** – The OrCAD project files.  
 - **Catalog Sheets** – Datasheets for the components used.  
 - **Fabrication Files** – Files required for PCB manufacturing.  
